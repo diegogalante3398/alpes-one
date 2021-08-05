@@ -1,0 +1,694 @@
+/*=== MEDIA QUERY ===*/
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700|Poppins:300,400,600,700);
+@import url(https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:300,400,500,600,700);
+html {
+    overflow-x: hidden;
+}
+
+body {
+    line-height: 1.5;
+    font-family: "Hind", serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.65);
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #242424;
+}
+
+h1, .h1 {
+    font-size: 2.5rem;
+}
+
+h2, .h2 {
+    line-height: 42px;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 32px;
+    font-weight: 500;
+    margin: 30px 0;
+}
+
+h3, .h3 {
+    font-size: 1.5rem;
+}
+
+h4, .h4 {
+    font-size: 1.3rem;
+    line-height: 30px;
+}
+
+h5, .h5 {
+    font-size: 1.25rem;
+}
+
+h6, .h6 {
+    font-size: 1rem;
+}
+
+p {
+    line-height: 30px;
+}
+
+input[type="email"], input[type="password"], input[type="text"], input[type="tel"] {
+    box-shadow: none;
+    height: 45px;
+    outline: none;
+    font-size: 14px;
+}
+
+input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focus, input[type="tel"]:focus {
+    box-shadow: none;
+}
+
+.form-control {
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 14px;
+    font-size: 0.8125rem;
+    font-weight: 400;
+    padding: 1rem 2.5rem;
+    text-transform: uppercase;
+    border-radius: 0;
+    transition: all 0.2s ease;
+}
+
+.btn.btn-icon i {
+    font-size: 16px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.btn:focus {
+    outline: 0px;
+    border: 0px;
+    box-shadow: none;
+}
+
+.btn-main, .btn-transparent, .btn-small {
+    background: #f75757;
+    color: #fff;
+    transition: all 0.2s ease;
+}
+
+.btn-main:hover, .btn-transparent:hover, .btn-small:hover {
+    background: #dd0b0b;
+    color: #fff;
+}
+
+.btn-solid-border {
+    border: 2px solid #f75757;
+    background: transparent;
+    color: #242424;
+}
+
+.btn-solid-border:hover {
+    border: 2px solid #f75757;
+    background: #f75757;
+}
+
+.btn-transparent {
+    background: transparent;
+    padding: 0;
+    color: #f75757;
+}
+
+.btn-transparent:hover {
+    background: transparent;
+    color: #f75757;
+}
+
+.btn-large {
+    padding: 20px 45px;
+}
+
+.btn-large.btn-icon i {
+    font-size: 16px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.btn-small {
+    padding: 10px 25px;
+    font-size: 12px;
+}
+
+.btn-round {
+    border-radius: 4px;
+}
+
+.btn-round-full {
+    border-radius: 50px;
+}
+
+.btn.active:focus, .btn:active:focus, .btn:focus {
+    outline: 0;
+}
+
+.section {
+    padding: 10px 0;
+}
+
+.section-title {
+    margin-bottom: 70px;
+}
+
+.text-sm {
+    font-size: 14px;
+}
+
+.text-md {
+    font-size: 2.25rem;
+}
+
+.text-lg {
+    font-size: 3.75rem;
+}
+
+.no-spacing {
+    letter-spacing: 0px;
+}
+
+/* Links */
+
+a {
+    color: #242424;
+    text-decoration: none;
+}
+
+a:focus, a:hover {
+    color: #f75757;
+    text-decoration: none;
+}
+
+a:focus {
+    outline: none;
+}
+/* Header */
+.header-top {
+    background: #eee;
+}
+
+.header-top .header-top-banzai a {
+    color: #919194;
+    margin-right: 15px;
+    font-size: 16px;
+}
+
+.header-top i {
+    padding-right: 10px;
+}
+
+.header-top .header-top-info {
+    color: #919194;
+    font-size: 16px;
+}
+
+.header-top .header-top-info a span {
+    color: #919194;
+}
+
+.header-top .header-top-info a {
+    margin-left: 35px;
+    color: #919194;
+}
+
+.central-atendimento {
+    text-align: center;
+}
+
+.central-atendimento span:first-child {
+    text-transform: uppercase;
+    font-style: italic;
+    color: #919194;
+    text-align: center;
+}
+
+.central-atendimento span:last-child {
+    color: #fa1a1a;
+    font-size: 28px;
+    font-style: italic;
+}
+
+/* Formulario */
+.form {
+    background: #eee;
+    border-radius: 5px;
+    width: 280px;
+    box-shadow: 0 0 3px #919194;
+
+    position: fixed;
+    top: 200px;
+    right: 10px;
+}
+.form form{
+    padding: 20px;
+}
+.form form .icons{
+    padding-bottom: 20px;
+}
+.form form .icons .destaque {
+    font-size: 1.3rem;
+    color: #DF0209;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+}
+.form .form-group{
+    margin-bottom: 5px;
+}
+.form .form-group input, .form .form-group select {
+    background: #eee;
+    border-radius: 4px;
+}
+.form button {
+    width: 100%;
+    height: 50px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 15px;
+    align-items: center;
+}
+
+/* Main */
+.bg-1 {
+    background: no-repeat;
+}
+
+.bg-1 img{
+    width: 100%;
+}
+
+.bg-2 {
+    display: none;
+}
+
+.honda-civic div {
+    width: 164px;
+    height: 95px;
+    margin-bottom: 5px;
+    border: 1px solid rgb(210, 210, 210);
+}
+
+.honda-civic div img {
+    width: 100%;
+    padding: 2px;
+}
+
+.honda-civic-2 {
+    padding: 0;
+    align-self: center;
+}
+
+.honda-civic-2 img {
+    width: 90%;
+}
+
+.desc-civic {
+    font-size: 18px;
+    margin-top: 30px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.inside-civic, .inside-civic img {
+    max-width: 100%;
+    padding: 0;
+}
+.inside-civic-cell {
+    display: none;
+}
+.carousel .row div{
+    padding: 0;
+}
+.carousel .carousel-inner .carousel-item .card {
+    border: none;
+    padding-left: 15px;
+    width: 285px;
+    height: 350px;
+}
+
+.carousel .carousel-inner .carousel-item div.border-img-card {
+    padding: 5px;
+    border:  1px solid #dfdfdf;
+}
+
+.carousel .carousel-inner .carousel-item .card-body {
+    padding: 0;
+}
+
+.carousel .carousel-inner .carousel-item .card-body .title-card {
+    font-size: 20px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.carousel .carousel-inner .carousel-item .card-body .card-text {
+    text-align: left;
+    margin-top: 10px;
+
+}
+
+.carousel .carousel-indicators {
+    position: inherit;
+    margin-top: 0px;
+    width: 120px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel .carousel-indicators li {
+    background: #919194;
+    border-radius: 50%;
+}
+
+.carousel .carousel-control-prev, .carousel-control-next{
+    background: #919194;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+}
+.carousel-control-next{
+    margin-right: 60px;
+}
+.carousel-control-prev{
+    margin-left: 10px;
+}
+
+.card {
+    width: 270px;
+    height: 350px;
+    border-radius: 0;
+    margin-right: 30px;
+}
+
+.card .card-img {
+    padding: 0 15px;
+}
+
+.card .card-body {
+    padding-top: 10px;
+}
+
+.title-honda {
+    margin-bottom: 5px;
+}
+
+.desc-honda {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.card .card-body .card-text {
+    text-align: center;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.card .card-body .btn-card{
+    border: 1px solid #dfdfdf;
+    padding: 5px 60px;
+    border-radius: 4px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.social-icons li {
+    margin: 0 6px;
+}
+
+.social-icons i {
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+/*=================================================================
+  Footer Section
+==================================================================*/
+
+.footer {
+    padding-bottom: 10px;
+}
+
+.footer .footer-top {
+    background: #eee;
+    width: 100%;
+    padding: 20px 0;
+    margin: 0;
+}
+
+#btn-encontre-concessionaria{
+    text-align: right;
+}
+
+.footer .footer-top .btn{
+    border: 1px solid #DF0209;
+    background: #fff;
+    width: 270px;
+    height: 80px;
+    border-radius: 4px;
+    padding: 0;
+}
+
+.footer .footer-top .btn .row{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.footer .footer-top .btn i{
+    font-size: 40px;
+    color: #919194;
+}
+
+.footer .footer-top .btn .destaque {
+    font-size: 1.3rem;
+    color: #DF0209;
+    line-height: 1.5rem;
+}
+
+.footer .footer-top .btn .row div {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.footer .footer-top .btn .row .txt-atendimento{
+    text-align: center;
+    font-style: italic;
+    color: #919194;
+    font-size: 15px;
+    line-height: 1.5rem;
+}
+.footer .footer-top .btn .row .txt-atendimento .contato-destaque{
+    color: #DF0209;
+    font-size: 28px;
+}
+
+.footer .siga {
+    margin-top: 20px;
+    text-align: center;
+}
+.footer .siga h4 {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.footer-socials {
+    margin-top: 10px;
+    text-align: center;
+    
+}
+.footer-socials .list-inline-item{
+    margin-right: 20px;
+}
+
+.footer-socials .list-inline-item i{
+    color: #fff;
+    font-size: 25px;
+    margin-right: 0px;
+    background: #919194;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.footer-btm {
+    text-align: center;
+}
+
+.footer-btm .banzai-logo{
+    width: 150px;
+}
+
+.footer-btm .ibama {
+    font-size: 13px;
+    color: #919194;
+    text-align: left;
+}
+
+
+/*=== MEDIA QUERY ===*/
+
+@media (max-width: 400px) {
+    h2, .h2 {
+        font-size: 1.3rem;
+        font-weight: 600;
+        line-height: 36px;
+    }
+    /* header */
+    .header-top {
+        display: none;
+    }
+    div.main {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+    }
+    div.main img {
+        margin-bottom: 30px;
+    }
+
+    /* section main */
+    .bg-1 {
+        display: none;
+    }
+    .bg-2 {
+        display: inline-block;
+        background: no-repeat center;
+    }
+    .bg-2 img:first-child {
+        width: 100%;
+    }
+    .inside-civic{
+        display: none;
+    }
+    .inside-civic-cell{
+        display: inline;
+        width: min-content;
+    }
+    .card-body, .card-text {
+        text-align: center !important;
+    }
+    .footer-socials {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* header */
+    .header-top {
+        display: none;
+    }
+    div.main {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+    }
+    div.main img {
+        margin-bottom: 30px;
+    }
+    /* Form */
+    .form {
+        margin-top: 30px;
+        width: 90%;
+        position: unset;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .form .icons div:first-child{
+        width: 30%;
+    }
+    .form .icons div:last-child{
+        width: 70%;
+    }
+    /* section main */
+    .honda-civic{
+        display: none;
+    }
+    .card {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .card-body, .card-text {
+        text-align: center !important;
+    }
+    p{
+        text-align: center;
+    }
+    .content-title {
+        text-transform: uppercase;
+        font-style: italic;
+        font-size: 28px;
+        font-weight: 400;
+    }
+    h2, .h2 {
+        font-size: 1.3rem;
+        font-weight: 600;
+        line-height: 36px;
+        text-align: center;
+    }
+    .footer-top {
+        text-align: center;
+    }
+    .footer-top #btn-encontre-concessionaria{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .footer-top #btn-encontre-concessionaria .row div:first-child{
+        width: 20%;
+    }
+    .footer-top #btn-encontre-concessionaria .row div:last-child{
+        width: 80%;
+    }
+    .footer-top .footer-socials {
+        margin-top: 20px;
+    }
+    .footer-btm .row div:last-child{
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 15px;
+    }
+    .carousel .carousel-control-prev, .carousel-control-next{
+        display: none;
+    }
+    .navbar-toggler {
+        color: #fff;
+    }
+    .bg-about {
+        display: none;
+    }
+    .footer-socials {
+        margin-top: 20px;
+    }
+    .footer-socials li a {
+        margin-left: 0px;
+    }
+    .slider .block h1 {
+        font-size: 56px;
+        line-height: 70px;
+    }
+    
+}
